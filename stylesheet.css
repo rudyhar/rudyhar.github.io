@@ -1,0 +1,25 @@
+/* style.css */
+
+/* Centering the links on the page */
+.centered-links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Styling for individual links */
+a {
+    display: block;
+    margin: 10px;
+    font-size: 20px;
+    color: blue;
+    text-decoration: none;
+}
+
+.background {
+
+    background-color: #C6E7E6;
+
+}
