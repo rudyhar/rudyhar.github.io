@@ -23,12 +23,61 @@ a {
     background-color: #C6E7E6;
 }
 
-.bot-centre {
+.top-centre {
     text-align: center;
-    margin-bottom: 30px; /* Adjust as needed */
+    margin-top: 30px; /* Adjust as needed */
 }
 
 .bot-centre img {
     width: auto; /* Or set a fixed width */
     height: auto; /* Or set a fixed height */
+}
+
+/* Existing styles... */
+
+.centered-links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    top: -500px; /* Shifts the container up by 50px. Adjust as needed */
+    /* Other styles as needed */
+}
+
+body {
+    width: 100%; /* Ensures full width */
+    margin: 0; /* Removes default margin */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Or any color you prefer */
+}
+
+
+/* Rest of your styles... */
+
+
+.overlay-text a {
+    display: block; /* Makes each link occupy its own line */
+    color: #fff; /* Or any color you prefer */
+    text-decoration: none;
+}
+
+.overlay-text p {
+    color: #fff; /* Or any color you prefer */
+}
+
+.scale-up {
+    transform: scale(1.7); /* Adjust the scaling factor as needed */
+    transform-origin: center;
+    transition: transform 0.5s ease;
 }
