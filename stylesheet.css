@@ -35,17 +35,10 @@ a {
 
 /* Existing styles... */
 
-.centered-links {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
 
 .container {
     position: relative;
-    top: -500px; /* Shifts the container up by 50px. Adjust as needed */
+    top: -300px; /* Shifts the container up by 50px. Adjust as needed */
     /* Other styles as needed */
 }
 
@@ -77,7 +70,38 @@ body {
 }
 
 .scale-up {
-    transform: scale(1.7); /* Adjust the scaling factor as needed */
+    transform: scale(2); /* Adjust the scaling factor as needed */
     transform-origin: center;
     transition: transform 0.5s ease;
+}
+
+
+/* FOR LINKS */
+
+.overlay-text .custom-link-color {
+    color: #C4421A; /* Example color; replace with your desired color */
+}
+
+.overlay-text .custom-link-color:hover {
+    color: #C4421A; /* Darker shade for hover effect, adjust as needed */
+}
+
+
+.centered-links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.tight-paragraph {
+    margin-top: 5px; /* Reduces space above the paragraph */
+    margin-bottom: 5px; /* Reduces space below the paragraph */
+}
+
+
+.overlay-text p {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
