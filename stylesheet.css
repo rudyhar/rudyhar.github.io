@@ -25,7 +25,7 @@ a {
 
 .top-centre {
     text-align: center;
-    margin-top: 30px; /* Adjust as needed */
+    margin-top: 0px; /* Adjust as needed */
 }
 
 .bot-centre img {
@@ -38,7 +38,7 @@ a {
 
 .container {
     position: relative;
-    top: -300px; /* Shifts the container up by 50px. Adjust as needed */
+    top: -100px; /* Shifts the container up by 50px. Adjust as needed */
     /* Other styles as needed */
 }
 
@@ -70,7 +70,7 @@ body {
 }
 
 .scale-up {
-    transform: scale(2); /* Adjust the scaling factor as needed */
+    transform: scale(2.5); /* Adjust the scaling factor as needed */
     transform-origin: center;
     transition: transform 0.5s ease;
 }
@@ -104,4 +104,77 @@ body {
 .overlay-text p {
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+.overlay-text a {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    transform: scale(1); /*Adjust the scaling factor as needed */
+}
+
+
+.gap-at-bot {
+    margin-bottom: 10px; /* Adjust this value to increase/decrease space */
+    display: block; /* Makes it behave like a <br> */
+}
+
+
+/* Base styles for larger screens (default) */
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+/* Styles for screens less than 600px wide */
+
+/* make text a bit smaller */
+/* scale of speech box larger */
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    .navbar {
+        /* Styles for a mobile-friendly navbar */
+    }
+
+    .image {
+        /* Adjust image styles for mobile */
+    }
+
+    /* Additional mobile-specific styles */
+
+    .overlay-text p{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        transform: scale(1); /*Adjust the scaling factor as needed */
+        font-size: 10px; /* Adjust the font size as needed */
+    }
+
+    .overlay-text a{
+        margin-top: 0px;
+        margin-bottom: 4px;
+        transform: scale(1.7); /*Adjust the scaling factor as needed */
+        font-size: 10px; /* Adjust the font size as needed */
+    }
+
+
+    .gap-at-bot {
+        margin-bottom: 3px; /* Adjust this value to increase/decrease space */
+        display: block; /* Makes it behave like a <br> */
+    }
+
+    .scale-up {
+        transform: scale(2.4); /* Adjust the scaling factor as needed */
+        transform-origin: center;
+        transition: transform 0.5s ease;
+    }
+
+    
 }
